@@ -1,23 +1,3 @@
-// import './style.experience.css'
-// import { Chip } from '@mui/material'
-// import React from 'react'
-
-// const Experience = () => {
-//     return (
-//         <section className="experience-section" id='experience-section'>
-//             <div className="header">
-//                 <div className="skills-label">
-//                     <Chip label="Experience" sx={{ color: '#fff', width: 150, fontSize: 18, p: 2, fontWeight: 500, mt: 2, mb: 2, background: '#374151' }} />
-//                 </div>
-//             </div>
-//         </section>
-//     )
-// }
-
-// export default Experience
-
-
-// Experience.js
 import './style.experience.css';
 import { Chip } from '@mui/material';
 import React from 'react';

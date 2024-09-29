@@ -80,6 +80,10 @@
 /* Responsive styles */
 @media (max-width: 768px) {
     .experience-card {
+        padding: 1rem;
+        max-width: 18rem;
+    }
+    .experience-card {
         flex-direction: column; /* Stack items vertically on small screens */
         padding: 1rem; /* Reduce padding */
     }
