@@ -6,9 +6,12 @@
 
 .section-details {
     display: flex;
-    flex-direction: row; /* Default to row layout */
-    gap: 20px; /* Space between sections */
-    margin-top: 20px; /* Optional margin for spacing */
+    flex-direction: row;
+    /* Default to row layout */
+    gap: 20px;
+    /* Space between sections */
+    margin-top: 20px;
+    /* Optional margin for spacing */
 }
 
 /* Container for text sections */
@@ -28,16 +31,19 @@
     text-decoration: underline;
     text-underline-offset: 0.25rem;
     transition: all 0.3s ease;
-    color: #e2e8f0; /* Link color */
+    color: #e2e8f0;
+    /* Link color */
 }
 
 .about-link:hover {
-    color: #fff; /* Change link color on hover */
+    color: #fff;
+    /* Change link color on hover */
 }
 
 .about-left-section,
 .about-right-section {
-    flex: 1; /* Each section takes equal space */
+    flex: 1;
+    /* Each section takes equal space */
     padding: 1rem;
     color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
     display: flex;
@@ -48,15 +54,19 @@
 /* Image container styles */
 .about-image-container {
     position: relative;
-    height: 600px; /* Default height */
-    width: 450px; /* Default width */
+    height: 600px;
+    /* Default height */
+    width: 450px;
+    /* Default width */
 }
 
 .about-image {
     position: absolute;
     z-index: 10;
-    height: 600px; /* Default height */
-    width: 450px; /* Default width */
+    height: 600px;
+    /* Default height */
+    width: 450px;
+    /* Default width */
     border: 5px solid #111827;
     top: 0;
     object-fit: cover;
@@ -64,8 +74,10 @@
 
 .about-image-background {
     position: absolute;
-    height: 600px; /* Default height */
-    width: 450px; /* Default width */
+    height: 600px;
+    /* Default height */
+    width: 450px;
+    /* Default width */
     border: 8px solid transparent;
     background-color: #374151;
     top: 3rem;
@@ -73,86 +85,158 @@
 }
 
 .custom-list {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Default to column layout */
-    gap: 1.25rem; /* Space between items */
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Default to column layout */
+    gap: 1.25rem;
+    /* Space between items */
 }
 
 .about-text svg {
-    margin-right: 0.2rem; /* Increase space between icon and text */
+    margin-right: 0.2rem;
+    /* Increase space between icon and text */
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
     .section-details {
-        flex-direction: column; /* Stack sections on smaller screens */
-        gap: 10px; /* Reduced gap for mobile */
+        flex-direction: column;
+        /* Stack sections on smaller screens */
+        gap: 10px;
+        /* Reduced gap for mobile */
     }
 
     .about-left-section,
     .about-right-section {
-        flex: 1 0 100%; /* Full width for mobile */
-        padding: 0.5rem; /* Adjust padding for mobile */
+        flex: 1 0 100%;
+        /* Full width for mobile */
+        padding: 0.5rem;
+        /* Adjust padding for mobile */
     }
 
     .about-image-container {
-        height: 250px; /* Adjust height for mobile */
-        width: 100%; /* Full width for mobile */
+        height: 250px;
+        /* Adjust height for mobile */
+        width: 100%;
+        /* Full width for mobile */
     }
 
     .about-image {
-        width: 100%; /* Adjust image width for mobile */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        /* Adjust image width for mobile */
+        height: auto;
+        /* Maintain aspect ratio */
     }
 
+    /* Image container styles */
+    .about-image-container {
+        position: relative;
+        height: 600px;
+        /* Default height */
+        width: 450px;
+        /* Default width */
+    }
+
+    .about-image {
+        position: relative;
+        z-index: 10;
+        height: 500px;
+        width: 350px;
+        border: transparent;
+        top: 0;
+        object-fit: cover;
+    }
+
+    .about-image-background {
+        position: relative;
+        height: 500px;
+        width: 350px;
+        border: none;
+        background-color: transparent;
+        top: 0rem;
+        left: 0rem;
+    }
+
+
     .about-title {
-        font-size: 1.5rem; /* Adjust title size for mobile */
+        font-size: 1.5rem;
+        /* Adjust title size for mobile */
     }
 
     .about-text {
-        font-size: 1rem; /* Adjust body text for mobile */
+        font-size: 1rem;
+        /* Adjust body text for mobile */
     }
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .about-title {
-        font-size: 1.75rem; /* Slightly smaller title for tablets */
+        font-size: 1.75rem;
+        /* Slightly smaller title for tablets */
     }
 
     .about-text {
-        font-size: 1.1rem; /* Adjust body text for tablets */
+        font-size: 1.1rem;
+        /* Adjust body text for tablets */
     }
 
     .about-image-container {
-        height: 400px; /* Adjust height for tablets */
-        width: auto; /* Maintain aspect ratio */
+        height: 400px;
+        /* Adjust height for tablets */
+        width: auto;
+        /* Maintain aspect ratio */
     }
 }
 
 .responsive-list {
     display: flex;
-    flex-direction: row; /* Default to row layout */
+    flex-direction: row;
+    /* Default to row layout */
 }
 
 @media (max-width: 768px) {
     .responsive-list {
-        flex-direction: column; /* Stack items on smaller screens */
-        gap: 0.5rem; /* Reduced space between items for mobile */
+        flex-direction: column;
+        /* Stack items on smaller screens */
+        gap: 0.5rem;
+        /* Reduced space between items for mobile */
+    }
+
+    .about-text {
+        position: relative;
+    }
+
+    .about-text {
+        position: relative;
+        margin-top: 10rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        /* Default size */
+        line-height: 2rem;
+        /* Default line height */
+        color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
+        text-align: start;
     }
 }
 
 .list-inside {
-    list-style-position: inside; /* Inside list style */
+    list-style-position: inside;
+    /* Inside list style */
 }
 
 .list-disc {
-    list-style-type: disc; /* Disc bullets */
+    list-style-type: disc;
+    /* Disc bullets */
 }
 
 .about-text {
     font-weight: 400;
-    font-size: 1.2rem; /* Default size */
-    line-height: 2rem; /* Default line height */
+    font-size: 1.2rem;
+    /* Default size */
+    line-height: 2rem;
+    /* Default line height */
     color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
     text-align: start;
 }
