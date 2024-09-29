@@ -1,0 +1,99 @@
+.skills-sub-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
+}
+
+.skills-section {
+    width: 100%;
+    padding: 4rem 0; /* Adjust padding as necessary */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 1.2rem; /* Space below header */
+}
+
+.skills-label {
+    color: #e2e8f0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.skills-description {
+    font-size: 1.25rem; /* Adjust font size */
+    max-width: 600px; /* Limit width */
+    margin: auto;
+    color: #e2e8f0;
+}
+
+.skills-grid {
+    display: grid;
+    color: #e2e8f0;
+    grid-template-columns: repeat(8, 1fr); /* Adjust columns */
+    gap: 1.5rem; /* Space between items */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-icon {
+    width: 80px; /* Set icon size */
+    height: 80px;
+    transition: transform 0.3s ease; /* Scale on hover */
+}
+
+.skill-icon:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(6, 1fr); /* Reduce columns */
+    }
+}
+
+@media (max-width: 992px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr); /* Further reduce columns */
+    }
+
+    .skills-description {
+        font-size: 1.15rem; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); /* Two columns on smaller screens */
+    }
+
+    .skills-sub-title {
+        font-size: 1rem; /* Smaller subtitle */
+    }
+
+    .skills-description {
+        font-size: 1rem; /* Smaller description font */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+
+    .skills-sub-title {
+        font-size: 0.9rem; /* Even smaller subtitle */
+    }
+
+    .skills-description {
+        font-size: 0.9rem; /* Smaller description font */
+    }
+}

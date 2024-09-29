@@ -1,0 +1,68 @@
+.footer {
+    width: 100%;
+    background-color: #111827; /* Dark background */
+    padding: 1.5rem 0; /* Vertical padding */
+    color: #fff; /* Text color */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center; /* Vertically center items */
+    gap: 0.25rem; /* Adjust as needed for spacing */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer-text {
+    font-size: 0.875rem; /* Smaller font size */
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.footer-icon {
+    margin-right: 0.25rem; /* Spacing between icon and text */
+    height: 1rem; /* Icon height */
+    width: 1rem; /* Icon width */
+}
+
+.footer-link {
+    text-decoration: underline; /* Underline for links */
+    text-underline-offset: 0.25rem; /* Spacing for underline */
+    transition: all 0.3s ease; /* Transition effect */
+}
+
+.footer-link:hover {
+    color: #1f2937; /* Hover color */
+}
+
+.footer-link:active {
+    color: #4b5563; /* Active color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-text {
+        font-size: 0.8rem; /* Smaller font size for smaller screens */
+    }
+
+    .footer-icon {
+        height: 0.875rem; /* Smaller icon height */
+        width: 0.875rem; /* Smaller icon width */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        flex-direction: column; /* Stack items vertically on very small screens */
+        text-align: center; /* Center align text */
+    }
+
+    .footer-text {
+        font-size: 0.75rem; /* Even smaller font size */
+    }
+
+    .footer-icon {
+        height: 0.75rem; /* Smaller icon height */
+        width: 0.75rem; /* Smaller icon width */
+    }
+}

@@ -1,0 +1,218 @@
+.portfolio-header {
+    display: flex;
+    flex-direction: row;
+    /* Default layout */
+    padding: 20px;
+    /* Add padding */
+}
+
+.left-section {
+    flex: 0 0 60%;
+    /* 60% width */
+    padding: 20px;
+    /* Optional padding */
+}
+
+.right-section {
+    flex: 0 0 40%;
+    /* 40% width */
+    padding: 20px;
+    /* Optional padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-p {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+}
+
+.portfolio-p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    line-height: 2rem;
+    color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
+    text-align: start;
+}
+
+.image-container {
+    position: relative;
+    height: 300px;
+    /* Default height */
+    width: 280px;
+    /* Default width */
+}
+
+.image {
+    position: absolute;
+    z-index: 10;
+    height: 300px;
+    width: 240px;
+    border: 5px solid #030712;
+    left: 5%;
+    top: 0;
+    object-fit: cover;
+}
+
+.image-md {
+    height: 320px;
+    /* Medium screens */
+    width: 280px;
+    /* Medium screens */
+}
+
+.image-background {
+    position: absolute;
+    height: 300px;
+    width: 240px;
+    border: 8px solid transparent;
+    background-color: #374151;
+    /* Gray-200 */
+    top: 2rem;
+    left: 3rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    /* Vertically center the items */
+    gap: 0.8rem;
+    /* Space between the icon and text */
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    stroke: #4B5563;
+    /* Equivalent to gray-600 */
+}
+
+.location-text {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .portfolio-header {
+        flex-direction: column;
+        /* Stack sections vertically */
+        padding: 10px;
+        /* Reduce padding on mobile */
+    }
+
+    .left-section,
+    .right-section {
+        flex: 0 0 100%;
+        /* Full width for mobile */
+        padding: 10px;
+        /* Adjust padding */
+    }
+
+    .right-section {
+        order: -1;
+        /* Make right section come first */
+    }
+
+    .header-p {
+        font-size: 1.75rem;
+        /* Smaller header size */
+    }
+
+    .portfolio-p {
+        font-size: 1rem;
+        /* Smaller paragraph size */
+    }
+}
+
+@media (min-width: 768px) {
+    .header-p {
+        font-weight: 700;
+        font-size: 3rem;
+        letter-spacing: -0.02em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-p {
+        font-size: 3.75rem;
+        /* Larger header size */
+        line-height: 4.5rem;
+        /* Maintain line height */
+    }
+}
+
+.waving-hand {
+    display: inline-block;
+    animation: waving 1s infinite;
+}
+
+@keyframes waving {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+}
+
+/* Additional Responsive Styles */
+@media (max-width: 480px) {
+    .header-p {
+        font-size: 1.5rem;
+        /* Further reduce header size */
+    }
+
+    .portfolio-p {
+        font-size: 0.9rem;
+        /* Further reduce paragraph size */
+        line-height: 1.5rem;
+        /* Adjust line height */
+    }
+
+    .image-container {
+        height: 250px;
+        /* Reduce image container height */
+        width: 220px;
+        /* Reduce width */
+    }
+
+    .image {
+        height: 250px;
+        /* Reduce image height */
+        width: 220px;
+        /* Reduce image width */
+    }
+
+    .image-background {
+        height: 250px;
+        /* Reduce image height */
+        width: 220px;
+        /* Reduce image width */
+        top: 0.8rem;
+        left: 1.5rem;
+    }
+    
+    .location-text {
+        font-size: 1rem;
+        /* Smaller location text */
+    }
+
+    .icon {
+        width: 24px;
+        /* Smaller icon size */
+        height: 24px;
+        /* Smaller icon size */
+    }
+
+
+
+}

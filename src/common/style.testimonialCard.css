@@ -1,0 +1,64 @@
+.testimonial-card {
+    border-radius: 1rem;
+    background-color: #1F2937; /* Card background color */
+    color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 350px; /* Set a max width for the card */
+    flex: 1 1 calc(33% - 1.5rem); /* Responsive width for three in a row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    cursor: pointer; /* Indicate that it's clickable */
+}
+
+.quote {
+    line-height: 1.8rem;
+    font-size: 18px;
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0;;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.5rem;
+}
+
+.author-name {
+    font-size: 1.125rem; /* Larger font for name */
+    font-weight: 600;
+    color: #f9fafb; /* Light color for contrast */
+}
+
+.author-role {
+    font-size: 0.875rem; /* Smaller font for role */
+    color: #e5e7eb; /* Light gray for contrast */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonial-card {
+        flex: 1 1 calc(50% - 1.5rem); /* Two cards in a row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-card {
+        flex: 1 1 100%; /* Stacks cards on smaller screens */
+    }
+}

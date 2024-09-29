@@ -1,0 +1,103 @@
+.experience-card {
+    border-radius: 1rem;
+    background-color: #1F2937;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto; /* Added margin for spacing between cards */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 75rem;
+    width: 100%;
+    color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
+    text-align: start;
+    font-weight: 400;
+    font-size: 1.2rem;
+    transition: transform 0.2s; /* Smooth transition for scaling */
+}
+
+.experience-card:hover {
+    transform: scale(1.01); /* Slightly scale the card */
+    animation: bounce 0.5s; /* Trigger bounce animation */
+}
+
+.logo-container {
+    order: 1; /* Ensure logo is first */
+    max-width: 20%; /* Logo takes 20% of the card */
+    display: flex;
+    justify-content: center; /* Center logo horizontally */
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%; /* Make logo responsive */
+    transition: transform 0.2s; /* Smooth transition for scaling */
+}
+
+.logo-container:hover .logo {
+    transform: scale(1.1); /* Slightly scale the logo */
+    animation: bounce 0.5s; /* Trigger bounce animation */
+}
+
+.date-container {
+    order: 3; /* Ensure date is last */
+    max-width: 20%; /* Date takes 20% of the card */
+    text-align: right; /* Align date to the right */
+}
+
+.date {
+    font-size: 0.875rem; /* Smaller text for date */
+    color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1)); /* Gray color for date */
+}
+
+.details-container {
+    flex: 1; /* Allow this container to take the remaining space */
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    gap: 0.5rem; /* Space between text elements */
+    order: 2; /* Ensure details are second */
+}
+
+.role {
+    font-size: 1.125rem; /* Large text for role */
+    font-weight: 700; /* Bold text */
+    color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1)); /* Dark gray text color */
+    margin-bottom: 1rem; /* Add some space below the title */
+}
+
+.responsibilities {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 0.5rem; /* Space between list items */
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 1.5rem; /* Indent the list items for alignment */
+}
+
+.responsibilities li {
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .experience-card {
+        flex-direction: column; /* Stack items vertically on small screens */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .logo-container, .date-container {
+        max-width: 100%; /* Allow logo and date to take full width */
+        text-align: center; /* Center align on mobile */
+    }
+
+    .date {
+        margin-top: 0.5rem; /* Add some space above the date */
+    }
+
+    .role {
+        font-size: 1rem; /* Adjust font size for role */
+    }
+
+    .responsibilities {
+        padding-left: 0; /* Remove indentation on small screens */
+    }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --app-gray-600: 209, 213, 219; /* RGB values */
+}
+
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.App {
+  text-align: center;
+  background-color: #030712;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+  width: 100%; /* Ensure full width */
+  padding: 0 1rem; /* Add some padding */
+}

@@ -1,0 +1,117 @@
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    /* Align items vertically */
+    width: 100%;
+}
+
+.nav-icons {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.nav-icons>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu-items {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.list-none {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 8px 16px;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link:active {
+    color: #4B5563;
+}
+
+.nav-link:focus {
+    outline: 2px solid #1F2937;
+    outline-offset: 2px;
+}
+
+.btn-download-cv-a{
+    text-transform: none;
+}
+
+.btn-download-cv {
+    min-width: 200px;
+    max-width: 250px;
+    padding: 2px;
+    text-align: center;
+    color: #1F2937;
+    font-size: 1.2rem;
+    background-color: #fff;
+    height: 50px;
+    max-height: 100px;
+    font-weight: 600;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+.hamburger-menu {
+    display: none;
+    /* Hide hamburger menu by default */
+}
+
+.drawer-list {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 8px 16px;
+}
+
+@media (max-width: 768px) {
+    .nav-menu-items {
+        display: none;
+        /* Hide the regular menu on small screens */
+    }
+
+    .hamburger-menu {
+        display: block;
+        /* Show hamburger menu on small screens */
+    }
+}

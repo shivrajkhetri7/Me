@@ -1,0 +1,35 @@
+.testimonials-section {
+    padding: 2rem;
+}
+
+.header {
+    text-align: center;
+}
+
+.testimonials-intro {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 35rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
+}
+
+.testimonial-cards-container {
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between cards */
+    flex-wrap: wrap; 
+    gap: 2.5rem; /* Space between cards */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .testimonials-intro {
+        font-size: 1.25rem;
+    }
+    
+    .testimonial-cards-container {
+        justify-content: space-evenly; /* Center cards on larger screens */
+    }
+}

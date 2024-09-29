@@ -1,0 +1,106 @@
+.get-in-touch-section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.next-steps-text {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 35rem;
+    margin: 0 auto;
+    line-height: 2;
+    color: rgba(var(--app-gray-600), var(--tw-text-opacity, 1));
+}
+
+.get-in-touch-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.get-in-touch-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.get-in-touch-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+}
+
+.get-in-touch-text {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 800;
+    line-height: 0.2rem;
+}
+
+.get-in-touch-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #fff;
+    background: none; /* No background */
+    cursor: pointer; /* Pointer cursor */
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    border-radius: 16px;
+}
+
+.get-in-touch-button:hover {
+    background-color: #f0f0f0;
+    border-radius: 16px; /* Light gray on hover */
+}
+
+.get-in-touch-button:active {
+    background-color: #e0e0e0; /* Darker gray on active */
+}
+
+.get-in-touch-copy-icon {
+    width: 24px; /* Icon size */
+    height: 24px;
+    stroke: #4B5563; /* Example icon color */
+}
+
+.get-in-touch-button svg {
+    width: 32px; /* Set icon width */
+    height: 32px; /* Set icon height */
+    stroke: #4B5563; /* Example icon color */
+    transition: stroke 0.3s ease; /* Smooth color transition */
+}
+
+.get-in-touch-button:hover svg {
+    stroke: #374151; /* Change icon color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .next-steps-text {
+        font-size: 1rem; /* Adjust font size for mobile */
+        max-width: 90%; /* Allow more width on mobile */
+    }
+
+    .get-in-touch-item {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center align items */
+        gap: 0.5rem; /* Reduce gap */
+    }
+
+    .get-in-touch-text {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .get-in-touch-button {
+        padding: 0.4rem; /* Adjust padding for buttons */
+    }
+
+    .get-in-touch-icon {
+        width: 1.5rem; /* Adjust icon size for mobile */
+        height: 1.5rem;
+    }
+}
