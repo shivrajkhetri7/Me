@@ -42,7 +42,6 @@ const About = () => {
                             where I share tech-related bites and build in public.
                         </p>
                         <p className="about-text">Finally, some quick bits about me.</p>
-                        <p className="about-text">Finally, some quick bits about me.</p>
                         <div className="responsive-list">
                             <ul className="custom-list">
                                 <li className="about-text">
