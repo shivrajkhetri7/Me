@@ -107,6 +107,11 @@
         /* Reduced gap for mobile */
     }
 
+    .custom-list {
+        gap: 0.5rem;
+    }
+    
+
     .about-left-section,
     .about-right-section {
         flex: 1 0 100%;
